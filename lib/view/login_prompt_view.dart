@@ -4,8 +4,8 @@ import 'package:acko_clone/view/login_work_view.dart';
 import 'package:acko_clone/view/privacy_view.dart';
 import 'package:flutter/material.dart';
 
-class LoginPrompt extends StatelessWidget {
-  const LoginPrompt({super.key});
+class LoginPromptView extends StatelessWidget {
+  const LoginPromptView({super.key});
 
   @override
   Widget build(BuildContext context) {
