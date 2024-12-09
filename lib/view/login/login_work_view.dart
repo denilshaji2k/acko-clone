@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../view_model/login_work_view_model.dart';
+import '../../view_model/login_work_view_model.dart';
 import 'package:provider/provider.dart';
 
 class LoginWork extends StatelessWidget {

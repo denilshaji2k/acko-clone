@@ -1,7 +1,7 @@
-import 'package:acko_clone/view/login_recover_view.dart';
-import 'package:acko_clone/view/login_mobile_view.dart';
-import 'package:acko_clone/view/login_work_view.dart';
-import 'package:acko_clone/view/privacy_view.dart';
+import 'package:acko_clone/view/login/login_recover_view.dart';
+import 'package:acko_clone/view/login/login_mobile_view.dart';
+import 'package:acko_clone/view/login/login_work_view.dart';
+import 'package:acko_clone/view/login/privacy_view.dart';
 import 'package:flutter/material.dart';
 
 class LoginPromptView extends StatelessWidget {

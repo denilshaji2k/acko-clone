@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:acko_clone/view/login_mobile_otp_view.dart';
+import 'package:acko_clone/view/login/login_mobile_otp_view.dart';
 
 class LoginMobile extends StatelessWidget {
   const LoginMobile({super.key});
