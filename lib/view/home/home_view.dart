@@ -1,4 +1,5 @@
 import 'package:acko_clone/view/home/family_view.dart';
+import 'package:acko_clone/view/home/home_cards_view.dart';
 import 'package:acko_clone/view/home/policies_view.dart';
 import 'package:acko_clone/view_model/home_view_model.dart';
 
@@ -412,6 +413,7 @@ class HomeView extends StatelessWidget {
                             );
                           },
                         ),
+                        const HomeCardsView()
                       ],
                     ),
                   )
