@@ -360,74 +360,117 @@ class HealthCard extends StatelessWidget {
           ),
           child: Align(
             alignment: Alignment.centerLeft,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+            child: Row(
               children: [
-                const Text(
-                  'Buying a brand new bike?',
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w700,
-                    color: Color.fromARGB(255, 100, 99, 99),
-                    fontFamily: 'poppins',
-                  ),
-                ),
-                Row(
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                    const Text(
+                      'Want us to pay all your hospital bills?',
+                      style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w700,
+                        color: Color.fromARGB(255, 100, 99, 99),
+                        fontFamily: 'poppins',
+                      ),
+                    ),
+                    Row(
                       children: [
-                        ShaderMask(
-                          shaderCallback: (bounds) => const LinearGradient(
-                            colors: [
-                              Color(0xFFE11D74),
-                              Color(0xFF7F00FF),
-                            ],
-                          ).createShader(bounds),
-                          child: RichText(
-                            text: const TextSpan(
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: 'poppins',
-                              ),
-                              children: [
-                                TextSpan(
-                                  text: 'Get insurance directly',
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            ShaderMask(
+                              shaderCallback: (bounds) => const LinearGradient(
+                                colors: [
+                                  Color(0xFFE11D74),
+                                  Color(0xFF7F00FF),
+                                ],
+                              ).createShader(bounds),
+                              child: RichText(
+                                text: const TextSpan(
                                   style: TextStyle(
-                                      color:
-                                          Color.fromARGB(255, 255, 255, 255)),
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'poppins',
+                                  ),
+                                  children: [
+                                    TextSpan(
+                                      text:
+                                          'Get our health plan and have 100% of\n your bills paid',
+                                      style: TextStyle(
+                                          color: Color.fromARGB(
+                                              255, 255, 255, 255)),
+                                    ),
+                                  ],
                                 ),
-                                TextSpan(
-                                  text:
-                                      ' from us and \n save big on your premium',
-                                  style: TextStyle(color: Colors.black),
-                                ),
-                              ],
+                              ),
                             ),
-                          ),
+                          ],
                         ),
                       ],
                     ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    SvgPicture.asset(
-                      'assets/ic_policy_details_bike.svg',
-                      height: 50,
-                      width: 50,
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    const Icon(
-                      Icons.arrow_forward_ios_rounded,
-                      size: 15,
-                    ),
                   ],
+                ),
+                const SizedBox(
+                  width: 20,
+                ),
+                SvgPicture.asset(
+                  'assets/ic_health_proposal.svg',
+                  height: 50,
+                  width: 50,
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+                const Icon(
+                  Icons.arrow_forward_ios_rounded,
+                  size: 15,
                 ),
               ],
             ),
+          ),
+        ),
+        const SizedBox(
+          height: 10,
+        ),
+        Container(
+          margin: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(8.0),
+          height: 90,
+          width: 390,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: Row(
+            children: [
+              const Center(
+                child: Text(
+                  'Coroporate health policy from ACKO?',
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                    fontFamily: 'poppins',
+                  ),
+                ),
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              SvgPicture.asset(
+                'assets/corporate_health_plan.svg',
+                height: 40,
+                width: 40,
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              const Icon(
+                Icons.arrow_forward_ios_rounded,
+                size: 15,
+              ),
+            ],
           ),
         )
       ],
@@ -440,16 +483,30 @@ class LifeCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.all(8.0),
-      padding: const EdgeInsets.all(8.0),
-      height: 400,
-      width: 390,
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: const Text('Fourth Card'),
+    return Column(
+      children: [
+        Container(
+          margin: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(8.0),
+          height: 250,
+          width: 390,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: const Center(
+            child: Text(
+              'Life insurance that\'s highly\nflexible and truly reliable',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+                fontFamily: 'poppins',
+              ),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

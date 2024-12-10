@@ -1,0 +1,1 @@
+a:6:{s:13:"TransactionId";s:8:"AACWU120";s:6:"Status";s:7:"Success";s:7:"Message";s:7:"Success";s:6:"Amount";s:8:"20245.00";s:12:"payment_type";s:8:"CashFree";s:18:"isUserTrailAccount";a:2:{s:5:"error";b:0;s:4:"data";a:1:{s:7:"message";s:74:"You have now successfully upgraded to a cash account from a trial account.";}}} 
