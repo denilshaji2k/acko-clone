@@ -543,15 +543,127 @@ class HomeView extends StatelessWidget {
                                 ),
                               ),
                               const SizedBox(height: 10),
-                              MaterialButton(
-                                onPressed: () {},
-                                height: 90,
-                                minWidth: MediaQuery.of(context).size.width,
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(11),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  squareCard(
+                                      icon: Icons.build_circle_outlined,
+                                      text: 'Book car\nservicing'),
+                                  squareCard(
+                                      icon: Icons.airplane_ticket_outlined,
+                                      text: 'Book flight\ntickets'),
+                                  squareCard(
+                                    icon: Icons.account_balance_outlined,
+                                    text: 'Get vehicle\ninfo',
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  squareCard(
+                                      icon: Icons.traffic_outlined,
+                                      text: 'Pay  traffic\nchallans'),
+                                  squareCard(
+                                      icon: Icons.assignment_ind_outlined,
+                                      text: 'See PUCC\nvalidity'),
+                                  MaterialButton(
+                                    onPressed: () {},
+                                    height: 90,
+                                    minWidth: 127,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(11),
+                                    ),
+                                    color: const Color.fromARGB(
+                                        255, 219, 218, 218),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(100),
+                                            color: const Color.fromARGB(
+                                                255, 0, 0, 0),
+                                          ),
+                                          child: const Icon(
+                                              Icons.arrow_right_alt_sharp,
+                                              color: Colors.white),
+                                        ),
+                                        const SizedBox(height: 15),
+                                        const Text('Discover\nall'),
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                              const SizedBox(
+                                height: 15,
+                              ),
+                              const Text(
+                                '  Drive away with the best deals',
+                                style: TextStyle(
+                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'Inter',
                                 ),
-                                color: const Color.fromARGB(255, 219, 218, 218),
-                              )
+                              ),
+                              const SizedBox(height: 5),
+                              const Text(
+                                '  Enjoy supersaver offers on new cars, sell you car at a\n  great price, save on car servicing and more',
+                                style: TextStyle(
+                                  color: Color.fromARGB(255, 99, 99, 99),
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w400,
+                                  fontFamily: 'Inter',
+                                ),
+                              ),
+
+                              //scrolling image starts here
+
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  SizedBox(
+                                    height: 300,
+                                    width: 395,
+                                    child: ListView.builder(
+                                      scrollDirection: Axis.horizontal,
+                                      itemCount: 3,
+                                      itemBuilder: (context, index) {
+                                        return Container(
+                                          margin: const EdgeInsets.symmetric(
+                                              horizontal: 8),
+                                          width: 365,
+                                          decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(10),
+                                            image: const DecorationImage(
+                                              image: AssetImage(
+                                                'assets/1.jpeg',
+                                              ),
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
+                                        );
+                                      },
+                                    ),
+                                  )
+                                ],
+                              ),
                             ],
                           ),
                         )
@@ -563,5 +675,28 @@ class HomeView extends StatelessWidget {
             ),
           )),
     ));
+  }
+
+  MaterialButton squareCard({required IconData icon, required String text}) {
+    return MaterialButton(
+        onPressed: () {},
+        height: 90,
+        minWidth: 127,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(11),
+        ),
+        color: const Color.fromARGB(255, 219, 218, 218),
+        child: Align(
+          alignment: Alignment.centerLeft,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(icon),
+              const SizedBox(height: 15),
+              Text(text),
+            ],
+          ),
+        ));
   }
 }

@@ -33,6 +33,7 @@ class LoginMobile extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: TextField(
+              keyboardType: TextInputType.number,
               controller: mobileController,
               decoration: InputDecoration(
                 prefixIcon: Container(
