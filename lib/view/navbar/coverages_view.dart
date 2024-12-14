@@ -236,6 +236,96 @@ class CoveragesView extends StatelessWidget {
                         ),
                       ],
                     ),
+                    const SizedBox(height: 20),
+//add your vehicle starts here
+                    Container(
+                      color: const Color.fromARGB(255, 229, 228, 228),
+                      height: 450,
+                      width: 450,
+                      child: Column(
+                        children: [
+                          const SizedBox(height: 20),
+                          const Text(
+                            'Add your vehicle. Minus the worries.',
+                            style: TextStyle(
+                              fontSize: 23,
+                              fontFamily: 'poppins',
+                              fontWeight: FontWeight.bold,
+                              color: Color.fromARGB(255, 0, 0, 0),
+                            ),
+                          ),
+                          const Text(
+                            'Get insurance,Fastag,servicing,challan alerts,remiders,\nrewards & so much more.',
+                            style: TextStyle(
+                              fontSize: 15,
+                              fontFamily: 'poppins',
+                              fontWeight: FontWeight.w400,
+                              color: Color.fromARGB(255, 0, 0, 0),
+                            ),
+                          ),
+                          const SizedBox(height: 30),
+                          SizedBox(
+                            height: 320,
+                            width: 395,
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: 3,
+                              itemBuilder: (context, index) {
+                                final images = [
+                                  'assets/add1.png',
+                                  'assets/add2.png',
+                                  'assets/add3.png',
+                                  'assets/add4.png',
+                                ];
+
+                                final texts = [
+                                  "Save ₹80,000* on your next car",
+                                  "Sell your car at a great price",
+                                  "Take car care to the next level",
+                                ];
+
+                                final texts1 = [
+                                  "    Supersaver deals and superfast delivery",
+                                  "          Instant online quote and free evaluation",
+                                  "             Premium maintenance at unbeatable prices",
+                                ];
+                                final button = [
+                                  "Explore new cars",
+                                  "Check resale value",
+                                  "Book your car service",
+                                ];
+
+                                return Container(
+                                  margin:
+                                      const EdgeInsets.symmetric(horizontal: 8),
+                                  width: 383,
+                                  child:
+                                      // Background image
+                                      Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      // image: DecorationImage(
+                                      //   image: AssetImage(images[index]),
+                                      //   fit: BoxFit.cover,
+                                      // ),
+                                    ),
+                                    child: Positioned(
+                                      right: 50,
+                                      child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Text(texts[index]),
+                                          ]),
+                                    ),
+                                  ),
+                                );
+                              },
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
