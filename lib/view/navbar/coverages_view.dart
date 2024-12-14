@@ -285,9 +285,9 @@ class CoveragesView extends StatelessWidget {
                                 ];
 
                                 final texts1 = [
-                                  "    Supersaver deals and superfast delivery",
-                                  "          Instant online quote and free evaluation",
-                                  "             Premium maintenance at unbeatable prices",
+                                  "Supersaver deals and superfast delivery",
+                                  "Instant online quote and free evaluation",
+                                  "Premium maintenance at unbeatable prices",
                                 ];
                                 final button = [
                                   "Explore new cars",
@@ -296,26 +296,49 @@ class CoveragesView extends StatelessWidget {
                                 ];
 
                                 return Container(
-                                  margin:
-                                      const EdgeInsets.symmetric(horizontal: 8),
+                                  margin: const EdgeInsets.symmetric(horizontal: 8),
                                   width: 383,
-                                  child:
-                                      // Background image
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
                                       Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(10),
-                                      image: DecorationImage(
-                                        image: AssetImage(images[index]),
-                                        fit: BoxFit.cover,
+                                        height: 200,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(10),
+                                          image: DecorationImage(
+                                            image: AssetImage(images[index]),
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
                                       ),
-                                    ),
-                                    child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          const SizedBox(height: 20),
-                                          Text(texts[index]),
-                                        ]),
+                                      const SizedBox(height: 12),
+                                      Text(
+                                        texts[index],
+                                        style: const TextStyle(
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      const SizedBox(height: 8),
+                                      Text(
+                                        texts1[index],
+                                        style: const TextStyle(
+                                          fontSize: 14,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                      const SizedBox(height: 12),
+                                      TextButton(
+                                        onPressed: () {},
+                                        child: Text(
+                                          button[index],
+                                          style: const TextStyle(
+                                            fontSize: 16,
+                                            color: Colors.blue,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 );
                               },
