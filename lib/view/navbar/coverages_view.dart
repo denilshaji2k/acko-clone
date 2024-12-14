@@ -55,7 +55,7 @@ class CoveragesView extends StatelessWidget {
               const SizedBox(height: 30),
               Container(
                 width: 490,
-                height: 1500,
+                height: 945,
                 color: Colors.white,
                 child: Column(
                   children: [
@@ -240,7 +240,7 @@ class CoveragesView extends StatelessWidget {
 //add your vehicle starts here
                     Container(
                       color: const Color.fromARGB(255, 229, 228, 228),
-                      height: 450,
+                      height: 500,
                       width: 450,
                       child: Column(
                         children: [
@@ -269,7 +269,7 @@ class CoveragesView extends StatelessWidget {
                             width: 395,
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
-                              itemCount: 3,
+                              itemCount: 4,
                               itemBuilder: (context, index) {
                                 final images = [
                                   'assets/add1.png',
@@ -279,32 +279,32 @@ class CoveragesView extends StatelessWidget {
                                 ];
 
                                 final texts = [
-                                  "Save ₹80,000* on your next car",
-                                  "Sell your car at a great price",
-                                  "Take car care to the next level",
+                                  "PERSONALISED DASHBOARD",
+                                  "REAL TIME REMINDERS",
+                                  "COMPLETE PROTECTION",
+                                  "SAFE AND SECURE E-LOCKER"
                                 ];
 
                                 final texts1 = [
-                                  "Supersaver deals and superfast delivery",
-                                  "Instant online quote and free evaluation",
-                                  "Premium maintenance at unbeatable prices",
-                                ];
-                                final button = [
-                                  "Explore new cars",
-                                  "Check resale value",
-                                  "Book your car service",
+                                  "Manage and maintain your vehicle\nin one place",
+                                  "Recharge Fastag,pay challans\nand get PUC alerts",
+                                  "Protect your vehicle from\naccidental damage costs",
+                                  "Store and access your vehicle's\ndocuments online",
                                 ];
 
                                 return Container(
-                                  margin: const EdgeInsets.symmetric(horizontal: 8),
-                                  width: 383,
+                                  margin:
+                                      const EdgeInsets.symmetric(horizontal: 8),
+                                  width: 250,
                                   child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
                                       Container(
                                         height: 200,
                                         decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(10),
+                                          borderRadius:
+                                              BorderRadius.circular(10),
                                           image: DecorationImage(
                                             image: AssetImage(images[index]),
                                             fit: BoxFit.cover,
@@ -315,8 +315,10 @@ class CoveragesView extends StatelessWidget {
                                       Text(
                                         texts[index],
                                         style: const TextStyle(
-                                          fontSize: 18,
+                                          fontSize: 15,
                                           fontWeight: FontWeight.bold,
+                                          color: Color.fromARGB(
+                                              255, 112, 111, 111),
                                         ),
                                       ),
                                       const SizedBox(height: 8),
@@ -324,26 +326,30 @@ class CoveragesView extends StatelessWidget {
                                         texts1[index],
                                         style: const TextStyle(
                                           fontSize: 14,
-                                          color: Colors.grey,
+                                          color: Colors.black,
                                         ),
                                       ),
                                       const SizedBox(height: 12),
-                                      TextButton(
-                                        onPressed: () {},
-                                        child: Text(
-                                          button[index],
-                                          style: const TextStyle(
-                                            fontSize: 16,
-                                            color: Colors.blue,
-                                          ),
-                                        ),
-                                      ),
                                     ],
                                   ),
                                 );
                               },
                             ),
-                          )
+                          ),
+                          MaterialButton(
+                            minWidth: 367,
+                            color: const Color.fromARGB(255, 0, 0, 0),
+                            textColor: const Color.fromARGB(255, 255, 255, 255),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 20, vertical: 10),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            onPressed: () {
+                              // Handle button press
+                            },
+                            child: const Text('Add your vehicle'),
+                          ),
                         ],
                       ),
                     ),
