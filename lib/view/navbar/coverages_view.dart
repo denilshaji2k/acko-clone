@@ -304,20 +304,18 @@ class CoveragesView extends StatelessWidget {
                                       Container(
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(10),
-                                      // image: DecorationImage(
-                                      //   image: AssetImage(images[index]),
-                                      //   fit: BoxFit.cover,
-                                      // ),
+                                      image: DecorationImage(
+                                        image: AssetImage(images[index]),
+                                        fit: BoxFit.cover,
+                                      ),
                                     ),
-                                    child: Positioned(
-                                      right: 50,
-                                      child: Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(texts[index]),
-                                          ]),
-                                    ),
+                                    child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          const SizedBox(height: 20),
+                                          Text(texts[index]),
+                                        ]),
                                   ),
                                 );
                               },
