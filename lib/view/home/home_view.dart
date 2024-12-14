@@ -71,7 +71,7 @@ class _HomeViewState extends State<HomeView> {
 }
 
 class HomeContent extends StatelessWidget {
-  const HomeContent({Key? key}) : super(key: key);
+  const HomeContent({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -83,7 +83,7 @@ class HomeContent extends StatelessWidget {
             begin: Alignment.topCenter,
             end: Alignment.center,
             colors: [
-              Color.fromARGB(255, 64, 19, 101),
+              Color.fromARGB(255, 36, 10, 58),
               Color.fromARGB(255, 8, 6, 10),
             ],
           ),
@@ -149,7 +149,7 @@ class HomeContent extends StatelessWidget {
                         width: 395,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          color: const Color(0xff171717),
+                          color: const Color.fromARGB(255, 28, 1, 43),
                         ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
