@@ -114,15 +114,127 @@ class CoveragesView extends StatelessWidget {
                                     fontFamily: 'poppins',
                                     fontWeight: FontWeight.w400,
                                   )),
-                              const SizedBox(height: 10),
-                              TextButton(
-                                  onPressed: () {},
-                                  child:  const Text('See how hospital costs are rising'))
+                              Row(
+                                children: [
+                                  TextButton(
+                                    onPressed: () {},
+                                    child: const Text(
+                                      'See how hospital costs are rising',
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                        color:
+                                            Color.fromARGB(207, 172, 127, 60),
+                                      ),
+                                    ),
+                                  ),
+                                  const Icon(Icons.arrow_forward,
+                                      size: 20,
+                                      color: Color.fromARGB(207, 172, 127, 60)),
+                                ],
+                              ),
                             ],
-                           
-                          )
+                          ),
                         ],
                       ),
+                    ),
+                    const SizedBox(height: 20),
+                    //end of bill container
+                    Row(
+                      children: [
+                        const SizedBox(
+                          width: 19,
+                        ),
+                        Container(
+                          height: 170,
+                          width: 150,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(color: Colors.grey),
+                          ),
+                          child: Column(
+                            children: [
+                              const SizedBox(height: 20),
+                              Center(
+                                child: Container(
+                                  height: 50,
+                                  width: 50,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(90),
+                                    color: const Color.fromARGB(
+                                        255, 238, 199, 139),
+                                  ),
+                                  child: const Center(
+                                    child: Text('DS',
+                                        style: TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w500,
+                                        )),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 40,
+                              ),
+                              const Text(
+                                'User Name',
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                              const Spacer(),
+                              const Text(
+                                'NOT COVERED',
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: Color.fromARGB(255, 175, 41, 32),
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        const SizedBox(width: 19),
+                        Container(
+                          height: 170,
+                          width: 150,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(color: Colors.grey),
+                          ),
+                          child: Column(
+                            children: [
+                              const SizedBox(height: 38),
+                              Center(
+                                child: Container(
+                                  height: 50,
+                                  width: 50,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(90),
+                                    color: const Color.fromARGB(
+                                        255, 221, 221, 221),
+                                  ),
+                                  child: const Center(
+                                      child: Icon(
+                                    Icons.add,
+                                  )),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              const Text(
+                                'Add member',
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                              const Spacer(),
+                            ],
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
