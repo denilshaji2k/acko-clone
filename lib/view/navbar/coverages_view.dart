@@ -104,21 +104,22 @@ class CoveragesView extends StatelessWidget {
                             width: 90,
                             height: 90,
                           ),
-                          const Column(
+                          Column(
                             children: [
-                              SizedBox(height: 18),
-                              Text(
+                              const SizedBox(height: 18),
+                              const Text(
                                   'One major treatment will exhaust\nyour savings',
                                   style: TextStyle(
                                     fontSize: 15,
                                     fontFamily: 'poppins',
                                     fontWeight: FontWeight.w400,
                                   )),
-                                   SizedBox(height: 10),
-                                   TextButton
-                              
-
+                              const SizedBox(height: 10),
+                              TextButton(
+                                  onPressed: () {},
+                                  child:  const Text('See how hospital costs are rising'))
                             ],
+                           
                           )
                         ],
                       ),
