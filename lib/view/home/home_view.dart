@@ -171,8 +171,8 @@ class HomeContent extends StatelessWidget {
                               height: 8,
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(
-                                  left: 8.0, right: 8.0),
+                              padding:
+                                  const EdgeInsets.only(left: 8.0, right: 8.0),
                               child: Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
@@ -348,12 +348,12 @@ class HomeContent extends StatelessWidget {
                                     isSelected.setIsSelected(0);
                                   },
                                   style: TextButton.styleFrom(
-                                    backgroundColor:
-                                        isSelected.isSelected.value == 0
-                                            ? const Color.fromARGB(255, 255,
-                                                255, 255)
-                                            : const Color.fromARGB(
-                                                255, 40, 40, 40),
+                                    backgroundColor: isSelected
+                                                .isSelected.value ==
+                                            0
+                                        ? const Color.fromARGB(
+                                            255, 255, 255, 255)
+                                        : const Color.fromARGB(255, 40, 40, 40),
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(20),
                                     ),
@@ -377,8 +377,7 @@ class HomeContent extends StatelessWidget {
                                   backgroundColor: isSelected
                                               .isSelected.value ==
                                           1
-                                      ? const Color.fromARGB(
-                                          255, 255, 255, 255)
+                                      ? const Color.fromARGB(255, 255, 255, 255)
                                       : const Color.fromARGB(255, 40, 40, 40),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20),
@@ -388,8 +387,7 @@ class HomeContent extends StatelessWidget {
                                   'Bike',
                                   style: TextStyle(
                                     color: isSelected.isSelected.value == 1
-                                        ? const Color.fromARGB(
-                                            255, 40, 40, 40)
+                                        ? const Color.fromARGB(255, 40, 40, 40)
                                         : Colors.white,
                                   ),
                                 ),
@@ -401,8 +399,7 @@ class HomeContent extends StatelessWidget {
                                   backgroundColor: isSelected
                                               .isSelected.value ==
                                           2
-                                      ? const Color.fromARGB(
-                                          255, 255, 255, 255)
+                                      ? const Color.fromARGB(255, 255, 255, 255)
                                       : const Color.fromARGB(255, 40, 40, 40),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20),
@@ -415,8 +412,7 @@ class HomeContent extends StatelessWidget {
                                   'Health',
                                   style: TextStyle(
                                     color: isSelected.isSelected.value == 2
-                                        ? const Color.fromARGB(
-                                            255, 40, 40, 40)
+                                        ? const Color.fromARGB(255, 40, 40, 40)
                                         : Colors.white,
                                   ),
                                 ),
@@ -428,8 +424,7 @@ class HomeContent extends StatelessWidget {
                                   backgroundColor: isSelected
                                               .isSelected.value ==
                                           3
-                                      ? const Color.fromARGB(
-                                          255, 255, 255, 255)
+                                      ? const Color.fromARGB(255, 255, 255, 255)
                                       : const Color.fromARGB(255, 40, 40, 40),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20),
@@ -442,8 +437,7 @@ class HomeContent extends StatelessWidget {
                                   'Life',
                                   style: TextStyle(
                                     color: isSelected.isSelected.value == 3
-                                        ? const Color.fromARGB(
-                                            255, 40, 40, 40)
+                                        ? const Color.fromARGB(255, 40, 40, 40)
                                         : Colors.white,
                                   ),
                                 ),
@@ -454,8 +448,7 @@ class HomeContent extends StatelessWidget {
                                   backgroundColor: isSelected
                                               .isSelected.value ==
                                           4
-                                      ? const Color.fromARGB(
-                                          255, 255, 255, 255)
+                                      ? const Color.fromARGB(255, 255, 255, 255)
                                       : const Color.fromARGB(255, 40, 40, 40),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20),
@@ -468,8 +461,7 @@ class HomeContent extends StatelessWidget {
                                   'Travel',
                                   style: TextStyle(
                                     color: isSelected.isSelected.value == 4
-                                        ? const Color.fromARGB(
-                                            255, 40, 40, 40)
+                                        ? const Color.fromARGB(255, 40, 40, 40)
                                         : Colors.white,
                                   ),
                                 ),
@@ -603,8 +595,7 @@ class HomeContent extends StatelessWidget {
                             ),
                             const SizedBox(height: 10),
                             Row(
-                              mainAxisAlignment:
-                                  MainAxisAlignment.spaceBetween,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 squareCard(
                                     icon: Icons.build_circle_outlined,
@@ -621,8 +612,7 @@ class HomeContent extends StatelessWidget {
                               height: 10,
                             ),
                             Row(
-                              mainAxisAlignment:
-                                  MainAxisAlignment.spaceBetween,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 squareCard(
                                     icon: Icons.traffic_outlined,
@@ -637,11 +627,10 @@ class HomeContent extends StatelessWidget {
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(11),
                                   ),
-                                  color: const Color.fromARGB(
-                                      255, 219, 218, 218),
+                                  color:
+                                      const Color.fromARGB(255, 219, 218, 218),
                                   child: Column(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.center,
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
@@ -692,8 +681,7 @@ class HomeContent extends StatelessWidget {
                               height: 10,
                             ),
                             Row(
-                              mainAxisAlignment:
-                                  MainAxisAlignment.spaceBetween,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 SizedBox(
                                   height: 320,
@@ -737,8 +725,8 @@ class HomeContent extends StatelessWidget {
                                                 borderRadius:
                                                     BorderRadius.circular(10),
                                                 image: DecorationImage(
-                                                  image: AssetImage(
-                                                      images[index]),
+                                                  image:
+                                                      AssetImage(images[index]),
                                                   fit: BoxFit.cover,
                                                 ),
                                               ),
@@ -746,8 +734,7 @@ class HomeContent extends StatelessWidget {
                                             // Overlay for text and button
                                             Container(
                                               margin: const EdgeInsets.all(5),
-                                              padding:
-                                                  const EdgeInsets.all(5),
+                                              padding: const EdgeInsets.all(5),
                                               decoration: BoxDecoration(
                                                 borderRadius:
                                                     BorderRadius.circular(10),
@@ -787,10 +774,7 @@ class HomeContent extends StatelessWidget {
                                                     texts1[index],
                                                     style: const TextStyle(
                                                         color: Color.fromARGB(
-                                                            255,
-                                                            185,
-                                                            185,
-                                                            185),
+                                                            255, 185, 185, 185),
                                                         fontSize: 15,
                                                         fontWeight:
                                                             FontWeight.w400),
@@ -815,8 +799,7 @@ class HomeContent extends StatelessWidget {
                                                       .symmetric(
                                                       horizontal: 20,
                                                       vertical: 10),
-                                                  shape:
-                                                      RoundedRectangleBorder(
+                                                  shape: RoundedRectangleBorder(
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                             10),
@@ -918,8 +901,7 @@ class HomeContent extends StatelessWidget {
                           MaterialButton(
                             minWidth: 445,
                             color: const Color.fromARGB(255, 7, 5, 44),
-                            textColor:
-                                const Color.fromARGB(255, 255, 255, 255),
+                            textColor: const Color.fromARGB(255, 255, 255, 255),
                             onPressed: () {
                               // Handle button press
                             },
@@ -1005,8 +987,7 @@ class HomeContent extends StatelessWidget {
                                     // Background image
                                     Container(
                                       decoration: BoxDecoration(
-                                        borderRadius:
-                                            BorderRadius.circular(10),
+                                        borderRadius: BorderRadius.circular(10),
                                         image: DecorationImage(
                                           image: AssetImage(images[index]),
                                           fit: BoxFit.cover,
@@ -1018,8 +999,7 @@ class HomeContent extends StatelessWidget {
                                       margin: const EdgeInsets.all(5),
                                       padding: const EdgeInsets.all(5),
                                       decoration: BoxDecoration(
-                                        borderRadius:
-                                            BorderRadius.circular(10),
+                                        borderRadius: BorderRadius.circular(10),
                                       ),
                                     ),
                                     //
