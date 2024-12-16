@@ -55,37 +55,34 @@ class DiscoverView extends StatelessWidget {
               const SizedBox(height: 17),
               Container(
                 color: Colors.white,
-                height: 900,
+                height: 850,
                 width: 490,
                 child: Column(
                   children: [
+                    const SizedBox(height: 20),
                     SizedBox(
-                      height: 300,
+                      height: 120,
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
-                        itemCount: 3,
+                        itemCount: 2,
                         itemBuilder: (context, index) {
                           final images = [
-                            'assets/1.jpeg',
-                            'assets/2.jpeg',
-                            'assets/3.jpeg',
+                            'assets/services1.jpg',
+                            'assets/services2.jpg',
                           ];
 
                           final texts = [
-                            "Save ₹80,000* on your next car",
-                            "Sell your car at a great price",
-                            "Take car care to the next level",
+                            "Visa made simple",
+                            "Save up to ₹80,000*",
                           ];
 
                           final texts1 = [
-                            "    Supersaver deals and superfast delivery",
-                            "          Instant online quote and free evaluation",
-                            "             Premium maintenance at unbeatable prices",
+                            "99.4% visas on time",
+                            "         Get express delivery in 7 days",
                           ];
                           final button = [
-                            "Explore new cars",
-                            "Check resale value",
-                            "Book your car service",
+                            "Apply now",
+                            "Explore now",
                           ];
 
                           return Container(
@@ -95,6 +92,7 @@ class DiscoverView extends StatelessWidget {
                               children: [
                                 // Background image
                                 Container(
+                                  height: 140,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(10),
                                     image: DecorationImage(
@@ -116,14 +114,14 @@ class DiscoverView extends StatelessWidget {
 
                                 Positioned(
                                   left: 10,
-                                  top: 40,
+                                  top: 10,
                                   child: Column(
                                     children: [
                                       Text(
                                         texts[index],
                                         style: const TextStyle(
-                                          color:
-                                              Color.fromARGB(255, 255, 255, 255),
+                                          color: Color.fromARGB(
+                                              255, 255, 255, 255),
                                           fontSize: 18,
                                           fontWeight: FontWeight.bold,
                                         ),
@@ -141,11 +139,12 @@ class DiscoverView extends StatelessWidget {
                                 ),
 
                                 Positioned(
-                                  top: 254,
+                                  top: 55,
                                   child: Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: MaterialButton(
-                                      minWidth: 367,
+                                      height: 5,
+                                      minWidth: 100,
                                       color: const Color.fromARGB(
                                           255, 255, 255, 255),
                                       textColor:
@@ -168,6 +167,118 @@ class DiscoverView extends StatelessWidget {
                         },
                       ),
                     ),
+                    const SizedBox(height: 15),
+                    // For your vehicle starts here
+                    const Align(
+                      alignment: Alignment.centerLeft,
+                      child: Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text(
+                          'For your vehicle',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: SizedBox(
+                        height: 120,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            squareCard(
+                                icon: Icons.build_circle_outlined,
+                                text: 'Book car\nservicing'),
+                            squareCard(
+                                icon: Icons.confirmation_number_outlined,
+                                text: 'Recharge\nFASTag'),
+                            squareCard(
+                                icon: Icons.traffic_outlined,
+                                text: 'Pay traffic\nchallans'),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: SizedBox(
+                        height: 120,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            squareCard(
+                                icon: Icons.no_crash_outlined,
+                                text: 'Check resale\nvalue'),
+                            squareCard(
+                                icon: Icons.account_balance_outlined,
+                                text: 'Get vehicle\ninfo'),
+                            squareCard(
+                                icon: Icons.assignment_outlined,
+                                text: 'See PUCC\nvalidity'),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: SizedBox(
+                        height: 120,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            squareCard(
+                                icon: Icons.car_rental_outlined,
+                                text: 'Upgrade\nyour car'),
+                            squareCard(
+                                icon: Icons.co2_outlined,
+                                text: 'Emission\ncentres'),
+                            squareCard(
+                                icon: Icons.notifications_active_outlined,
+                                text: 'Activate\nalerts'),
+                          ],
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 15),
+                    // Other services starts here
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: Text(
+                          'Other services',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: SizedBox(
+                        height: 120,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            squareCard(
+                                icon: Icons.file_present_outlined,
+                                text: 'Apply\nfor a visa'),
+                            squareCard(
+                                icon: Icons.build_outlined,
+                                text: 'Repair your\nmobile'),
+                            squareCard(
+                                icon: Icons.favorite_outlined,
+                                text: 'Get ABHA\ncard'),
+                          ],
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -176,5 +287,28 @@ class DiscoverView extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  MaterialButton squareCard({required IconData icon, required String text}) {
+    return MaterialButton(
+        onPressed: () {},
+        height: 90,
+        minWidth: 127,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(11),
+        ),
+        color: const Color.fromARGB(255, 219, 218, 218),
+        child: Align(
+          alignment: Alignment.centerLeft,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(icon),
+              const SizedBox(height: 15),
+              Text(text),
+            ],
+          ),
+        ));
   }
 }
