@@ -126,49 +126,56 @@ class SupportView extends StatelessWidget {
                 const SizedBox(
                   height: 10,
                 ),
-                Container(
-                  height: 70,
-                  decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 255, 255, 255),
-                    borderRadius: BorderRadius.circular(20),
-                    border: Border.all(
-                      color: const Color.fromARGB(255, 156, 156, 156),
-                      width: 2,
-                    ),
-                  ),
-                  child: Row(children: [
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    const Icon(Icons.autorenew_outlined),
-                    const SizedBox(width: 10),
-                    const Text(
-                      'Bought a used vehicle with ACKO\ninsurance?',
-                      style: TextStyle(
-                        color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 13,
-                        fontWeight: FontWeight.w600,
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 255, 255, 255),
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        color: const Color.fromARGB(255, 156, 156, 156),
+                        width: 2,
                       ),
                     ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    TextButton(
-                      style: TextButton.styleFrom(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
+                    child: Row(children: [
+                      const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: SizedBox(
+                          width: 10,
                         ),
                       ),
-                      onPressed: () {},
-                      child: const Text(
-                        'Transfer policy',
+                      const Icon(Icons.autorenew_outlined),
+                      const SizedBox(width: 10),
+                      const Text(
+                        'Bought a used vehicle with ACKO\ninsurance?',
                         style: TextStyle(
-                          color: Color.fromARGB(255, 0, 91, 196),
+                          color: Color.fromARGB(255, 0, 0, 0),
+                          fontSize: 13,
+                          fontWeight: FontWeight.w600,
                         ),
                       ),
-                    ),
-                  ]),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      TextButton(
+                        style: TextButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                        ),
+                        onPressed: () {},
+                        child: const Text(
+                          'Transfer policy',
+                          style: TextStyle(
+                            color: Color.fromARGB(255, 0, 91, 196),
+                          ),
+                        ),
+                      ),
+                    ]),
+                  ),
                 ),
+                const SizedBox(height: 20),
 
                 const Align(
                   alignment: Alignment.centerLeft,
